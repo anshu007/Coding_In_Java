@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/my backup/New folder/New folder/log4j-1.2.15.jar" sourcepath="C:/Users/MAHAN07/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar"/>
+	<classpathentry kind="lib" path="C:/my backup/New folder/New folder/slf4j-api-1.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MAHAN07/Downloads/slf4j-log4j12.jar/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MAHAN07/Downloads/org.apache.commons.logging-1.1.1.jar (1)/org.apache.commons.logging-1.1.1.jar" sourcepath="C:/Users/MAHAN07/Desktop/org.apache.commons.logging-1.1.1.src.zip"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
