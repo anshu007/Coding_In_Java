@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap 
+PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Employee"> 
+
+<resultMap id="result" class="com.anshu.Employee">
+    <result property="identity" column="id"/>
+    <result property="firstName" column="first_name"/>
+    <result property="lastName" column="last_name"/>
+    <result property="salary" column="salary"/>
+</resultMap>
+ 
+<insert id="insert">          
+   insert into EMPLOYEE(id,first_name, last_name, salary)
+   values (#identity#, #firstName#, #lastName#, #salary#)
+</insert> 
+
+<select id="getAll" resultMap="result">
+   SELECT * FROM EMPLOYEE
+</select>
+
+<resultMap id="aokgroupid" class="com.anshu.AOKGROUPID">
+		<result property="groupId" column="GROUPID"/>
+</resultMap>
+	
+<select id="selectgroupidfromname" resultMap="aokgroupid">
+		SELECT unique(GROUPID) FROM AOK_EMAILTEMPLATES where GROUPNAME=#groupName# 
+</select>
+
+<update id="update" >
+   UPDATE EMPLOYEE
+   SET    SALARY = #salary#
+   WHERE  ID = #identity#
+</update>
+
+<delete id="delete" >
+   Delete FROM EMPLOYEE WHERE  id = #identity#
+</delete>
+
+</sqlMap>
